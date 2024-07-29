@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math game</title>
+    <link rel="stylesheet" href="math.css" />
+</head>
+<body>
+    <div id="gagne" class="gagne">
+        <div id="correcte" class="note hidden">
+            <h3>Correcte</h3>
+        </div>
+        <div class="operation">
+            <h1 id="nb1">7</h1>
+            <h1 id="op">+</h1>
+            <h1 id="nb2">2</h1>
+        </div>
+        <div class="reponse">
+            <h2><center>Donner la réponse</center></h2>
+            <input id="reponse" type="number"/>
+            <button class="soumettre" onclick="corriger()">Soumettre</button>
+        </div>
+    </div>
+    <div id="perdu" class="perdu hidden">
+        <div id="incorrecte" class="note hidden">
+            <h3>Vous avez perdu</h3>
+        </div>
+        <div class="score">
+            <h1 id="score">4</h1>
+            <h3>Score</h3>
+        </div>
+        <div class="recommence">
+            <button onclick="changer()">Recommencer</button>
+        </div>
+    </div>
+    <script src="math.js"></script>
+</body>
+</html>
